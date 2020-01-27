@@ -22,7 +22,7 @@ header {
   background-color: black;
   color: white;
 
-  padding: 60px 10px;
+  padding: 4% 10px;
 }
 header .container {    
   max-width: 1100px;
@@ -30,30 +30,34 @@ header .container {
 }
 
 #profile {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  column-gap: 1.4vw;
+
+  height: 11vw;
 }
 
 #profile-names {
+  height: 100%;
   text-transform: uppercase;
 }
 
 #fullname {
   font-weight: 400;
   margin: 0;
-  /*height: 70%;*/
-  font-size: 88px;
+  height: 70%;
+  /* font-size: 88px; */
 }
 
 #nickname {
-  /*height: 30%;*/
-  font-size: 38px;
+  height: 30%;
+  /* font-size: 38px; */
 }
 
 #profile-pic {
-  height: 160px;
-  border: 6px solid white;
+  height: 100%; 
+  border: 0.375vw solid white;
+  box-sizing: border-box;
 }
 
 main {
@@ -85,9 +89,14 @@ main .container {
 }
 main .content {
   background-image: linear-gradient(90deg, rgba(var(--color), .2) 10px,
-  transparent 10px 14px, rgba(var(--color), .2) 14px 18px, transparent 18px);
- padding-left: 42px;
- margin-top: 2.3em;
+    transparent 10px 14px, rgba(var(--color), .2) 14px 18px, transparent 18px);
+  padding-left: 42px;
+  margin-top: 2.3em;
+}
+@media screen and (max-width: 540px) {
+  main .content {
+    padding-left: 24px;
+  }
 }
 
 #education .content {
@@ -125,6 +134,11 @@ main .content {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+@media screen and (max-width: 540px) {
+  #talent ul {
+    grid-template-columns: 1fr;
+  }
 }
 #talent li {  
   padding: 10px 10px;

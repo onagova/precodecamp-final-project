@@ -11,10 +11,15 @@ function fitText(el) {
 
   $(el).css('font-size', --n);
 
-  console.log(el + ' fit at: ' + n + 'px');
+  // console.log(el + ' fit at: ' + n + 'px');
 }
 
-/*window.onload = function() {
+window.onload = function() {
   this.fitText(document.getElementById('fullname'));
   this.fitText(document.getElementById('nickname'));
-}*/
+}
+
+window.addEventListener('resize', function() {
+  this.fitText(document.getElementById('fullname'));
+  this.fitText(document.getElementById('nickname'));
+});
