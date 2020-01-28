@@ -17,13 +17,21 @@
       <div id="profile">
         <img id="profile-pic" src="images/profile-pic-720-720.jpg" alt="Profile Picture">
         <div id="profile-names">
-          <h1 id="fullname">Tanat Cheurthai</h1>
-          <div id="nickname">Nae</div>  
+          <div id="fullname">
+            <h1 class="changeable">Tanat Cheurthai<button class="styled-button absolute-button" type="button"></button></h1>
+          </div>
+          <div id="nickname">
+            <div class="changeable">Nae<button class="styled-button absolute-button" type="button"></button></div>
+          </div>
         </div>
       </div>       
     </div>
   </header>
   <main>
+    <div class="background-color-picker">
+      <div>change background color:</div>
+      <input type="color" value="#c8c2aa">
+    </div>
     <div class="container">
       <section id="education">
         <h2>Education</h2>
@@ -50,13 +58,14 @@
         <h2>Special Talents</h2>
         <div class="content">
           <ul>
-            <li><div>Getting 100% achievements from videogames</div></li>
-            <li><div>Finished Dark Souls Trilogy, Bloodborne and Sekiro</div></li>
-            <li><div>Rambling about fictional universes lores</div></li>
-            <li><div>Making totally <del>un</del>biased reviews of artistic works</div></li>
-            <li><div>Spending all day on Twitch/Youtube</div></li>
-            <li><div>Making bad talents lists</div></li>
+            <li><div>Getting 100% achievements from videogames</div><button class="styled-button absolute-button" type="button"></button></li>
+            <li><div>Finished Dark Souls Trilogy, Bloodborne and Sekiro</div><button class="styled-button absolute-button" type="button"></button></li>
+            <li><div>Rambling about fictional universes lores</div><button class="styled-button absolute-button" type="button"></button></li>
+            <li><div>Making totally <del>un</del>biased reviews of artistic works</div><button class="styled-button absolute-button" type="button"></button></li>
+            <li><div>Spending all day on Twitch/Youtube</div><button class="styled-button absolute-button" type="button"></button></li>
+            <li><div>Making bad talents lists</div><button class="styled-button absolute-button" type="button"></button></li>
           </ul>
+          <button id="add-button" class="styled-button" type="button">-ADD A TALENT-</button>
         </div>
       </section>
     </div>    
